@@ -8,8 +8,8 @@ This repository contains my progress, assignments, and projects for the Machine 
 * **`week_1/`**: Exploratory Data Analysis (EDA) and Data Cleaning. 
   * Handled missing values, detected outliers, and discovered key survival patterns using `matplotlib` and `seaborn`.
 * **`week_2/`**: First Machine Learning Models.
-  * Logistic Regression (Classification) for Titanic Survival Prediction.
-  * Linear Regression (Regression) for House Price Prediction. *(Coming Soon)*
+  * Logistic Regression (Classification) for Titanic Survival Prediction — **82.1% accuracy**.
+  * Linear Regression (Regression) for House Price Prediction — **R²: 0.32, RMSE: ~267,796**.
 
 ## 🛠️ Tech Stack & Tools
 * **Language:** Python
