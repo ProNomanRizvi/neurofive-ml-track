@@ -1,0 +1,25 @@
+# Week 2: First Machine Learning Models (Classification & Regression) 🤖
+
+## 📌 Overview
+This week transitions from data exploration to predictive modeling. The goal is to solve two fundamental types of machine learning problems: **Classification** (predicting a category) and **Regression** (predicting a continuous number). 
+
+---
+
+## 🛠️ Part 1: Titanic Survival Prediction (Classification)
+**Notebook:** `01_Titanic_Classification.ipynb`
+
+### Approach & Preprocessing
+* Loaded the cleaned dataset from Week 1.
+* **Feature Engineering:** Encoded categorical variables (`Sex` and `Embarked`) using `pd.get_dummies(drop_first=True)` to convert them into machine-readable numerical formats.
+* **Data Splitting:** Divided the dataset into training (80%) and testing (20%) sets using `train_test_split` to ensure the model is evaluated on unseen data.
+* **Algorithm:** Trained a **Logistic Regression** model.
+
+### 📊 Results & Evaluation
+* **Final Accuracy Score:** **82.1%** 
+* **Confusion Matrix Breakdown:**
+  * **True Negatives (91):** Correctly predicted passengers who did not survive.
+  * **True Positives (56):** Correctly predicted passengers who survived.
+  * **False Positives (14):** Model incorrectly predicted they survived.
+  * **False Negatives (18):** Model incorrectly predicted they did not survive.
+
+**Insight:** The model achieved a solid 82.1% accuracy. It performs slightly better at identifying non-survivors, which is expected since the original dataset has a higher proportion of non-survivors (class imbalance). 
