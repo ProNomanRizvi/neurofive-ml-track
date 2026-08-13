@@ -10,6 +10,9 @@ This repository contains my progress, assignments, and projects for the Machine 
 * **`week_2/`**: First Machine Learning Models.
   * Logistic Regression (Classification) for Titanic Survival Prediction — **82.1% accuracy**.
   * Linear Regression (Regression) for House Price Prediction — **R²: 0.32, RMSE: ~267,796**.
+* **`week_3/`**: Model Evaluation & Hyperparameter Tuning.
+  * Evaluated the Titanic model beyond accuracy using precision, recall, and F1-score.
+  * Tuned hyperparameters (`C`, `solver`) via `GridSearchCV` — tuned accuracy: **80.4%** vs. original **82.1%**, showing tuning doesn't always improve results on a given split.
 
 ## 🛠️ Tech Stack & Tools
 * **Language:** Python
