@@ -13,6 +13,8 @@ This repository contains my progress, assignments, and projects for the Machine 
 * **`week_3/`**: Model Evaluation, Tuning & Business Application.
   * Evaluated the Titanic model beyond accuracy using precision, recall, and F1-score; tuned hyperparameters (`C`, `solver`) via `GridSearchCV` — tuned accuracy: **80.4%** vs. original **82.1%**, showing tuning doesn't always improve results on a given split.
   * Customer Churn Prediction (Telco dataset) — compared Logistic Regression (**80.3%** accuracy) vs. Decision Tree (**74.0%**), identified top churn drivers, and summarized findings for a non-technical audience.
+* **`week_4/`**: Building a Proper ML Pipeline with Feature Engineering.
+  * Replaced manual preprocessing with a single `Pipeline` using `ColumnTransformer` (`StandardScaler` for numerical, `SimpleImputer` + `OneHotEncoder` for categorical) chained with Logistic Regression and Decision Tree — verified against Week 3's manual approach (**80.13%** vs. **80.3%** for Logistic Regression). Added 2 engineered features (`Charge_per_Tenure`, `Has_Internet`), improving accuracy to **80.34%**. Final pipeline saved with `joblib`.
 
 ## 🛠️ Tech Stack & Tools
 * **Language:** Python
